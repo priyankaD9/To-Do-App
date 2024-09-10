@@ -6,9 +6,6 @@ let inp = document.querySelector("input");
 
 
 btn.addEventListener("click",function(){
-    // console.log("Task was submitted!");
-    // console.log(inp.value);
-    // inp.value = "";
     let item = document.createElement("li");
     item.innerText = inp.value;
 
@@ -22,10 +19,8 @@ btn.addEventListener("click",function(){
 })
 
 ul.addEventListener("click",function(event){
-    // console.log(event.target.nodeName);
 if(event.target.nodeName = "BUTTON"){
     let listItem = event.target.parentElement;
-    // console.log(listItem);
     listItem.remove();
     console.log("removed");
 }
